@@ -19,7 +19,7 @@ pub(crate) struct Client {
 impl Client {
     pub(crate) fn new(n: u32) -> Self {
         let mut server_table = HashMap::new();
-        let base_port = 8000;
+        let base_port = 8080;
         for i in 0..n {
             server_table.insert(i, "127.0.0.1:".to_string() + &(base_port + i).to_string());
         }
